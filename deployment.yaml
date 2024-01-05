@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mypj2-deployment
+  labels:
+    app: mypj2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mypj2
+  template:
+    metadata:
+      labels:
+        app: mypj2
+    spec:
+      containers:
+      - name: mypj2container
+        image: ameldocker98/Images:CPJ2
+        ports:
+        - containerPort: 80
