@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: mypj2container
-        image: ameldocker98/Images:CPJ2
+        image: ameldocker98/images:CPJ2
         ports:
         - containerPort: 80
